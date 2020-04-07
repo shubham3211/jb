@@ -1,0 +1,46 @@
+.language-label {
+  color: hsl(180, 29%, 50%);
+  background: hsl(180, 52%, 96%);
+  margin-right: 10px;
+  padding: 7px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.language-label:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+}
+
+body {
+  /* background-color: hsl(180, 31%, 95%); */
+  background: hsl(180, 52%, 96%);
+  color: hsl(180, 29%, 50%);
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+}
+
+.job-role {
+  color: #293d3d;
+  font-weight: 700;
+  display: inline;
+  /* color: hsl(180, 14%, 20%); */
+}
+
+.job-role:hover {
+  color: hsl(180, 29%, 50%);
+}
+
+.new{
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+  padding: 5px;
+  border-radius: 10%;
+}
+
+.featured{
+  background-color: #293d3d;
+  padding: 5px;
+  border-radius: 10%;
+  color: white;
+}
