@@ -16,12 +16,13 @@ function Job(props) {
     <Paper elevation={3}>
       <Box pl={3} pr={3} pt={3} pb={2}>
         <Grid container>
-          <Grid item xs={2}>
+          <Grid item xs={2} style={{position: 'relative'}}>
             <img
               src={require(`./assets/images/${props.logo.split("/").pop()}`)}
+              className="image-container"
             />
           </Grid>
-          <Grid item xs={5}>
+          <Grid item md={5} xs={12} className="underline-details">
             <Grid container spacing={2}>
               <Grid
                 item
@@ -39,18 +40,19 @@ function Job(props) {
               <Grid item xs={12}>
                 <div className="job-role">{props.position}</div>
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} >
                 <Typography color="textSecondary">
                   {props.postedAt} . {props.contract} . {props.location}
                 </Typography>
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={5}>
+          <Grid item md={5} xs={12}>
             <Grid
               container
               style={{ width: "100%", height: "100%" }}
               alignItems="center"
+              className="language-container"
             >
               {props.languages
                 ? props.languages.map((language, index) => (

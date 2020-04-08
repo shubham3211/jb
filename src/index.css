@@ -31,16 +31,80 @@ body {
   color: hsl(180, 29%, 50%);
 }
 
-.new{
+.new {
   background-color: hsl(180, 29%, 50%);
   color: white;
   padding: 5px;
   border-radius: 10%;
 }
 
-.featured{
+.featured {
   background-color: #293d3d;
   padding: 5px;
   border-radius: 10%;
   color: white;
+}
+
+.cancel-language {
+  color: white;
+  background-color: hsl(180, 29%, 50%);
+  padding: 7px;
+  margin-right: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tool-label {
+  color: hsl(180, 29%, 50%);
+  background: hsl(180, 52%, 96%);
+  padding: 7px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cancel-language:hover {
+  background-color: #293d3d;
+}
+
+.clear-button {
+  float: right;
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px) {
+  .new {
+    display: none;
+  }
+  .featured {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .underline-details {
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+    padding-top: 20px;
+  }
+  .language-container{
+    margin-bottom: 30px;
+  }
+  .image-container{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -77px;
+    margin-top: 25px;
+  }
+}
+.filter-container{
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 2rem;
 }
